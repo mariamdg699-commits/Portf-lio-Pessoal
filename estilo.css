@@ -1,0 +1,389 @@
+/* ==========================
+   RESET
+========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:linear-gradient(135deg,#f6efff,#d7b8ff,#b57cff);
+
+    color:#4b2354;
+
+    line-height:1.7;
+
+}
+
+/* ==========================
+HEADER
+========================== */
+
+header{
+
+    background:linear-gradient(135deg,#6d28d9,#8b5cf6,#a855f7);
+
+    color:white;
+
+    text-align:center;
+
+    padding:70px 20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
+}
+
+header h1{
+
+    font-size:45px;
+
+    margin-bottom:15px;
+
+    animation:aparecer 1.2s;
+
+}
+
+header p{
+
+    font-size:20px;
+
+    opacity:.95;
+
+}
+
+/* ==========================
+PERFIL
+========================== */
+
+.perfil{
+
+    width:90%;
+    max-width:1100px;
+
+    margin:50px auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:50px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    box-shadow:0 10px 35px rgba(136,70,255,.25);
+
+    transition:.5s;
+
+}
+
+.perfil:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 45px rgba(136,70,255,.40);
+
+}
+
+.foto{
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:8px solid #b57cff;
+
+    transition:.5s;
+
+}
+
+.foto:hover{
+
+    transform:scale(1.07) rotate(2deg);
+
+    box-shadow:0 0 35px #b57cff;
+
+}
+
+.texto{
+
+    flex:1;
+
+}
+
+.texto h2{
+
+    font-size:34px;
+
+    color:#7e22ce;
+
+    margin-bottom:20px;
+
+}
+
+.texto p{
+
+    margin-bottom:15px;
+
+}
+
+/* ==========================
+TÍTULOS
+========================== */
+
+section h2{
+
+    text-align:center;
+
+    font-size:35px;
+
+    margin-bottom:35px;
+
+    color:#6d28d9;
+
+}
+
+/* ==========================
+CARDS
+========================== */
+
+.cards{
+
+    width:90%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 25px rgba(146,92,255,.25);
+
+}
+
+.card:hover{
+
+    transform:translateY(-12px) scale(1.04);
+
+    background:#f8f0ff;
+
+    box-shadow:0 18px 35px rgba(122,44,255,.45);
+
+}
+
+.card i{
+
+    font-size:45px;
+
+    color:#9333ea;
+
+    margin-bottom:20px;
+
+    transition:.4s;
+
+}
+
+.card:hover i{
+
+    transform:rotate(15deg) scale(1.2);
+
+    color:#6d28d9;
+
+}
+
+.card h3{
+
+    margin-bottom:15px;
+
+    color:#6d28d9;
+
+}
+
+/* ==========================
+OBJETIVOS
+========================== */
+
+.objetivos{
+
+    width:90%;
+    max-width:900px;
+
+    margin:60px auto;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 8px 30px rgba(146,92,255,.25);
+
+    transition:.4s;
+
+}
+
+.objetivos:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ==========================
+FOOTER
+========================== */
+
+footer{
+
+    background:#4b0082;
+
+    color:white;
+
+    text-align:center;
+
+    padding:30px;
+
+    margin-top:60px;
+
+}
+
+footer p{
+
+    margin:8px 0;
+
+}
+
+/* ==========================
+SCROLL BAR
+========================== */
+
+::-webkit-scrollbar{
+
+    width:12px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#f1e4ff;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#8b5cf6;
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:#6d28d9;
+
+}
+
+/* ==========================
+SELEÇÃO DE TEXTO
+========================== */
+
+::selection{
+
+    background:#9333ea;
+
+    color:white;
+
+}
+
+/* ==========================
+ANIMAÇÃO
+========================== */
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(-40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================
+RESPONSIVO
+========================== */
+
+@media(max-width:900px){
+
+.perfil{
+
+    flex-direction:column;
+
+    text-align:center;
+
+}
+
+header h1{
+
+    font-size:34px;
+
+}
+
+.texto h2{
+
+    font-size:28px;
+
+}
+
+.foto{
+
+    width:220px;
+
+    height:220px;
+
+}
+
+}

@@ -1,3 +1,4 @@
+```css
 /* ==========================
    RESET
 ========================== */
@@ -9,15 +10,10 @@
 }
 
 body{
-
-    font-family:'Poppins',sans-serif;
-
-    background:linear-gradient(135deg,#f6efff,#d7b8ff,#b57cff);
-
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#f5ecff,#d9b8ff,#b77dff);
     color:#4b2354;
-
-    line-height:1.7;
-
+    line-height:1.6;
 }
 
 /* ==========================
@@ -25,35 +21,20 @@ HEADER
 ========================== */
 
 header{
-
-    background:linear-gradient(135deg,#6d28d9,#8b5cf6,#a855f7);
-
+    background: linear-gradient(135deg,#6d28d9,#8b5cf6);
     color:white;
-
     text-align:center;
-
-    padding:70px 20px;
-
-    box-shadow:0 10px 30px rgba(0,0,0,.25);
-
+    padding:50px 20px;
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
 header h1{
-
-    font-size:45px;
-
-    margin-bottom:15px;
-
-    animation:aparecer 1.2s;
-
+    font-size:40px;
+    margin-bottom:10px;
 }
 
 header p{
-
-    font-size:20px;
-
-    opacity:.95;
-
+    font-size:18px;
 }
 
 /* ==========================
@@ -61,84 +42,38 @@ PERFIL
 ========================== */
 
 .perfil{
-
     width:90%;
-    max-width:1100px;
-
-    margin:50px auto;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    gap:50px;
-
+    max-width:1000px;
+    margin:40px auto;
     background:white;
-
-    padding:40px;
-
-    border-radius:25px;
-
-    box-shadow:0 10px 35px rgba(136,70,255,.25);
-
-    transition:.5s;
-
-}
-
-.perfil:hover{
-
-    transform:translateY(-8px);
-
-    box-shadow:0 20px 45px rgba(136,70,255,.40);
-
+    padding:30px;
+    border-radius:20px;
+    display:flex;
+    gap:30px;
+    align-items:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
 }
 
 .foto{
-
-    width:260px;
-
-    height:260px;
-
+    width:220px;
+    height:220px;
     border-radius:50%;
-
     object-fit:cover;
-
-    border:8px solid #b57cff;
-
-    transition:.5s;
-
+    border:6px solid #9d4edd;
+    transition:.4s;
 }
 
 .foto:hover{
-
-    transform:scale(1.07) rotate(2deg);
-
-    box-shadow:0 0 35px #b57cff;
-
+    transform:scale(1.05);
 }
 
 .texto{
-
     flex:1;
-
 }
 
 .texto h2{
-
-    font-size:34px;
-
-    color:#7e22ce;
-
-    margin-bottom:20px;
-
-}
-
-.texto p{
-
+    color:#6d28d9;
     margin-bottom:15px;
-
 }
 
 /* ==========================
@@ -146,15 +81,9 @@ TÍTULOS
 ========================== */
 
 section h2{
-
     text-align:center;
-
-    font-size:35px;
-
-    margin-bottom:35px;
-
+    margin-bottom:30px;
     color:#6d28d9;
-
 }
 
 /* ==========================
@@ -162,73 +91,51 @@ CARDS
 ========================== */
 
 .cards{
-
     width:90%;
-
+    max-width:1100px;
     margin:auto;
-
     display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-    gap:30px;
-
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
 }
 
 .card{
-
     background:white;
-
-    padding:35px;
-
-    border-radius:20px;
-
-    text-align:center;
-
-    transition:.4s;
-
-    cursor:pointer;
-
-    box-shadow:0 8px 25px rgba(146,92,255,.25);
-
+    padding:25px;
+    border-radius:18px;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
+    transition:.3s;
 }
 
 .card:hover{
-
-    transform:translateY(-12px) scale(1.04);
-
+    transform:translateY(-8px);
     background:#f8f0ff;
-
-    box-shadow:0 18px 35px rgba(122,44,255,.45);
-
-}
-
-.card i{
-
-    font-size:45px;
-
-    color:#9333ea;
-
-    margin-bottom:20px;
-
-    transition:.4s;
-
-}
-
-.card:hover i{
-
-    transform:rotate(15deg) scale(1.2);
-
-    color:#6d28d9;
-
 }
 
 .card h3{
-
+    color:#7b2cbf;
     margin-bottom:15px;
+}
 
-    color:#6d28d9;
+.card p{
+    text-align:justify;
+}
 
+/* ==========================
+LISTA DE CURSOS
+========================== */
+
+.lista-cursos{
+    list-style:none;
+}
+
+.lista-cursos li{
+    margin:8px 0;
+    padding-left:5px;
+}
+
+.lista-cursos li:hover{
+    color:#7b2cbf;
 }
 
 /* ==========================
@@ -236,30 +143,14 @@ OBJETIVOS
 ========================== */
 
 .objetivos{
-
     width:90%;
     max-width:900px;
-
-    margin:60px auto;
-
+    margin:50px auto;
     background:white;
-
-    padding:40px;
-
-    border-radius:25px;
-
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 6px 18px rgba(0,0,0,.15);
     text-align:center;
-
-    box-shadow:0 8px 30px rgba(146,92,255,.25);
-
-    transition:.4s;
-
-}
-
-.objetivos:hover{
-
-    transform:translateY(-8px);
-
 }
 
 /* ==========================
@@ -267,123 +158,36 @@ FOOTER
 ========================== */
 
 footer{
-
+    margin-top:40px;
     background:#4b0082;
-
     color:white;
-
     text-align:center;
-
-    padding:30px;
-
-    margin-top:60px;
-
-}
-
-footer p{
-
-    margin:8px 0;
-
-}
-
-/* ==========================
-SCROLL BAR
-========================== */
-
-::-webkit-scrollbar{
-
-    width:12px;
-
-}
-
-::-webkit-scrollbar-track{
-
-    background:#f1e4ff;
-
-}
-
-::-webkit-scrollbar-thumb{
-
-    background:#8b5cf6;
-
-    border-radius:20px;
-
-}
-
-::-webkit-scrollbar-thumb:hover{
-
-    background:#6d28d9;
-
-}
-
-/* ==========================
-SELEÇÃO DE TEXTO
-========================== */
-
-::selection{
-
-    background:#9333ea;
-
-    color:white;
-
-}
-
-/* ==========================
-ANIMAÇÃO
-========================== */
-
-@keyframes aparecer{
-
-    from{
-
-        opacity:0;
-
-        transform:translateY(-40px);
-
-    }
-
-    to{
-
-        opacity:1;
-
-        transform:translateY(0);
-
-    }
-
+    padding:25px;
 }
 
 /* ==========================
 RESPONSIVO
 ========================== */
 
-@media(max-width:900px){
+@media (max-width:768px){
 
 .perfil{
-
     flex-direction:column;
-
     text-align:center;
-
-}
-
-header h1{
-
-    font-size:34px;
-
-}
-
-.texto h2{
-
-    font-size:28px;
-
 }
 
 .foto{
+    width:180px;
+    height:180px;
+}
 
-    width:220px;
+header h1{
+    font-size:30px;
+}
 
-    height:220px;
-
+.cards{
+    grid-template-columns:1fr;
 }
 
 }
+```
